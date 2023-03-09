@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="App.TestRunner.ExperiBankTestRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-09T02:20:43" hostname="ASIF" time="43.297">
+  <properties/>
+  <testcase name="runScenario[0](&quot;user login&quot;, &quot;Optional[AppTest]&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="22.851"/>
+  <testcase name="runScenario[1](&quot;&quot;, &quot;Optional.empty&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="20.446"/>
+  <system-out><![CDATA[
+@login
+Scenario Outline: user login              # src/test/resources/Feature/App/EB1Login.feature:11
+  Given app apk is there                  # App.StepDefinition.EB1LoginStepDefs.appApkIsThere()
+  When user enters 'company'and 'company' # App.StepDefinition.EB1LoginStepDefs.userEntersUsernameAndPass(java.lang.String,java.lang.String)
+Ta Da!!
+  Then user will navigate to home screen  # App.StepDefinition.EB1LoginStepDefs.userWillNavigateToHomeScreen()
+
+@makePayment
+Scenario Outline:                                              # src/test/resources/Feature/App/EB2MakePayment.feature:12
+  Given user clicks on thr make payment tab                    # App.StepDefinition.EB2MakePaymentStepDefs.userClicksOnThrMakePaymentTab()
+  When user inserts '12345' and 'john' and '100'               # App.StepDefinition.EB2MakePaymentStepDefs.userInsertsPhoneAndNameAndAmount(java.lang.String,java.lang.String,java.lang.String)
+  And user selects country                                     # App.StepDefinition.EB2MakePaymentStepDefs.userSelectsCountry()
+  And user clicks on send payment button                       # App.StepDefinition.EB2MakePaymentStepDefs.userClicksOnSendPaymentButton()
+  Then user closes the alert selecting ok and confirms payment # App.StepDefinition.EB2MakePaymentStepDefs.userClosesTheAlertSelectingOkAndConfirmsPayment()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

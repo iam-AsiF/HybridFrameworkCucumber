@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="webSuite" duration-ms="31282" started-at="2023-03-09T08:20:12 BDT" finished-at="2023-03-09T08:20:43 BDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="xyzBank" duration-ms="31282" started-at="2023-03-09T08:20:12 BDT" finished-at="2023-03-09T08:20:43 BDT">
+      <class name="Web.TestRunner.XYZBankTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="setUpClass" is-config="true" duration-ms="1063" started-at="2023-03-09T08:20:12 BDT" finished-at="2023-03-09T08:20:13 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="runScenario" duration-ms="17246" started-at="2023-03-09T08:20:13 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T08:20:30 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Manager adds a customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Bank Manager Login (addCustomer)]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="runScenario" duration-ms="6954" started-at="2023-03-09T08:20:30 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T08:20:37 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Manager opens an account by linking newly created customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Bank Manager Login (openAccount)]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="runScenario" duration-ms="5862" started-at="2023-03-09T08:20:37 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T08:20:43 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Manager deletes the new customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Bank Manager Login (deleteCustomer)]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Web.TestRunner.XYZBankTestRunner@55b7a4e0]" name="tearDownClass" is-config="true" duration-ms="90" started-at="2023-03-09T08:20:43 BDT" finished-at="2023-03-09T08:20:43 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Web.TestRunner.XYZBankTestRunner -->
+    </test> <!-- xyzBank -->
+  </suite> <!-- webSuite -->
+  <suite name="appSuite" duration-ms="43356" started-at="2023-03-09T08:20:43 BDT" finished-at="2023-03-09T08:21:26 BDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:App.TestRunner.ExperiBankTestRunner@4567f35d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="ExperiBank" duration-ms="43356" started-at="2023-03-09T08:20:43 BDT" finished-at="2023-03-09T08:21:26 BDT">
+      <class name="App.TestRunner.ExperiBankTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:App.TestRunner.ExperiBankTestRunner@4567f35d]" name="setUpClass" is-config="true" duration-ms="31" started-at="2023-03-09T08:20:43 BDT" finished-at="2023-03-09T08:20:43 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:App.TestRunner.ExperiBankTestRunner@4567f35d]" name="runScenario" duration-ms="22851" started-at="2023-03-09T08:20:43 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T08:21:06 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[AppTest]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:App.TestRunner.ExperiBankTestRunner@4567f35d]" name="runScenario" duration-ms="20446" started-at="2023-03-09T08:21:06 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T08:21:26 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional.empty"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:App.TestRunner.ExperiBankTestRunner@4567f35d]" name="tearDownClass" is-config="true" duration-ms="25" started-at="2023-03-09T08:21:26 BDT" finished-at="2023-03-09T08:21:26 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- App.TestRunner.ExperiBankTestRunner -->
+    </test> <!-- ExperiBank -->
+  </suite> <!-- appSuite -->
+</testng-results>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="appSuite" parallel="none">
+    <test name="ExperiBank">
+        <classes>
+            <class name="App.TestRunner.ExperiBankTestRunner"/>
+        </classes>
+    </test>
+
+</suite>
