@@ -53,8 +53,9 @@ task hybridTest(type: Test) {
         System.out.println(testValue)
 
         if (testValue == "HybridTestRunner") {
-            suites "src/test/XML/Web.xml" // placing suite path
-            suites "src/test/XML/app.xml"
+            suites "src/test/XML/Web/Web.xml" // placing suite path
+            suites "src/test/XML/App/app.xml"
+            suites "src/test/XML/Api/getApi.xml"
         } else {
             println "no xml found"
         }

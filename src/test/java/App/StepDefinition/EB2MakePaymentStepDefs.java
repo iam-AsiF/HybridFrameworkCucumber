@@ -1,5 +1,6 @@
 package App.StepDefinition;
 
+import App.Core.Helper;
 import App.POM.AppElements;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -36,5 +37,9 @@ public class EB2MakePaymentStepDefs {
     @Then("user closes the alert selecting ok and confirms payment")
     public void userClosesTheAlertSelectingOkAndConfirmsPayment() {
         app.AlertForPayment();
+
+        // closing the app
+        Helper hlp = new Helper();
+        driver = hlp.closeApk();
     }
 }

@@ -25,5 +25,9 @@ public class Helper {
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), dc);
         return driver;
     }
+    public AndroidDriver closeApk(){
+        driver.closeApp();
+        return driver;
+    }
 
 }
