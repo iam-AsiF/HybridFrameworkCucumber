@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="App.TestRunner.ExperiBankTestRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-09T15:29:54" hostname="ASIF" time="42.518">
+<testsuite name="App.TestRunner.ExperiBankTestRunner" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-24T15:17:29" hostname="ASIF" time="100.379">
   <properties/>
-  <testcase name="runScenario[0](&quot;user login&quot;, &quot;Optional[AppTest]&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="22.156"/>
-  <testcase name="runScenario[1](&quot;&quot;, &quot;Optional.empty&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="20.361"/>
+  <testcase name="runScenario[0](&quot;user login&quot;, &quot;Optional[AppTest]&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="30.676"/>
+  <testcase name="runScenario[1](&quot;&quot;, &quot;Optional.empty&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="20.08"/>
+  <testcase name="runScenario[2](&quot;&quot;, &quot;Optional.empty&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="40.914"/>
+  <testcase name="runScenario[3](&quot;&quot;, &quot;Optional.empty&quot;)" classname="App.TestRunner.ExperiBankTestRunner" time="8.708"/>
   <system-out><![CDATA[
 @login
 Scenario Outline: user login              # src/test/resources/Feature/App/EB1Login.feature:11
@@ -18,6 +20,26 @@ Scenario Outline:                                              # src/test/resour
   And user selects country                                     # App.StepDefinition.EB2MakePaymentStepDefs.userSelectsCountry()
   And user clicks on send payment button                       # App.StepDefinition.EB2MakePaymentStepDefs.userClicksOnSendPaymentButton()
   Then user closes the alert selecting ok and confirms payment # App.StepDefinition.EB2MakePaymentStepDefs.userClosesTheAlertSelectingOkAndConfirmsPayment()
+
+@mortgageRequest
+Scenario Outline:                                         # src/test/resources/Feature/App/EB3MortgageRequest.feature:16
+  Given user clicks on the mortgage request tab           # App.StepDefinition.EB3MortgageRequestStepDefs.userClicksOnTheMortgageRequestTab()
+  When user inserts 'john' and 'test'                     # App.StepDefinition.EB3MortgageRequestStepDefs.userInsertsFirstNameAndLastName(java.lang.String,java.lang.String)
+  And user selects '30' and 'road 19' and 'Banani'        # App.StepDefinition.EB3MortgageRequestStepDefs.userSelectsAgeAndAddressAndAddress(java.lang.String,java.lang.String,java.lang.String)
+  And selects country for mortgage                        # App.StepDefinition.EB3MortgageRequestStepDefs.selectsCountryForMortgage()
+  And press next button                                   # App.StepDefinition.EB3MortgageRequestStepDefs.pressNextButton()
+  And selects type of loan from dropdown                  # App.StepDefinition.EB3MortgageRequestStepDefs.selectsTypeOfLoanFromDropdown()
+  And selects number of years from dropdown               # App.StepDefinition.EB3MortgageRequestStepDefs.selectsNumberOfYearsFromDropdown()
+  And selects type of occupation from dropdown            # App.StepDefinition.EB3MortgageRequestStepDefs.selectsTypeOfOccupationFromDropdown()
+  And selects yearly income from dropdown                 # App.StepDefinition.EB3MortgageRequestStepDefs.selectsYearlyIncomeFromDropdown()
+  Then closes mortgage payment by clicking on save button # App.StepDefinition.EB3MortgageRequestStepDefs.closesMortgagePaymentByClickingOnSaveButton()
+
+@expenseReport
+Scenario:                                            # src/test/resources/Feature/App/EB4ExpenseReport.feature:3
+  Given user taps on the expense report button       # App.StepDefinition.EB4ExpenseReportStepDefs.userTapsOnTheExpenseReportButton()
+  When user adds two  expense report                 # App.StepDefinition.EB4ExpenseReportStepDefs.userAddsTwoExpenseReport()
+  And removes one report                             # App.StepDefinition.EB4ExpenseReportStepDefs.removesOneReport()
+  Then user goes back and logs out and quits the app # App.StepDefinition.EB4ExpenseReportStepDefs.userGoesBackAndLogsOutAndQuitsTheApp()
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

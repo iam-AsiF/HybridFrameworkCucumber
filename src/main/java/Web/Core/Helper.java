@@ -32,6 +32,7 @@ public class Helper {
 
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
+        options.addArguments("--remote-allow-origins=*"); // solution for driver error
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
