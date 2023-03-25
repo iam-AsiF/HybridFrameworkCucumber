@@ -56,11 +56,7 @@ task hybridTest(type: Test) {
             suites "src/test/XML/Web/Web.xml" // placing suite path
             suites "src/test/XML/App/app.xml"
             suites "src/test/XML/Api/getApi.xml"
-        } else {
-            println "no xml found"
         }
 
     }
 }
-
-
